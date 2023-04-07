@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "VoiceAI.config": {
+            "group": "extensions",
+            "subtab": "VoiceAI_subtab",
+            "type": "string",
+            "title": "VoiceAI_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

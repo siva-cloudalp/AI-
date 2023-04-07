@@ -1,0 +1,77 @@
+{
+    "name": "VoiceAI",
+    "fantasyName": "VoiceAI",
+    "vendor": "CloudAlp",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCS,SCA",
+    "target_version": {
+        "SCS": ">=21.2.0",
+        "SCA": ">=21.2.0"
+    },
+    "description": "Voice recoginse for search item in webstrore.",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/VoiceAI.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/VoiceAI/Configuration/VoiceAI.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/VoiceAI/Sass/_voiceai-voiceai.scss"
+        },
+        "files": [
+            "Modules/VoiceAI/Sass/_voiceai-voiceai.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/VoiceAI/Templates/cloudalp_voiceai_voiceai.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/VoiceAI/JavaScript/CloudAlp.VoiceAI.VoiceAI.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/VoiceAI/JavaScript/CloudAlp.VoiceAI.VoiceAI.js",
+                    "Modules/VoiceAI/JavaScript/VoiceAI.View.js",
+                    "Modules/VoiceAI/JavaScript/CloudAlp.VoiceAI.VoiceAI.Model.js",
+                    "Modules/VoiceAI/JavaScript/CloudAlp.VoiceAI.VoiceAI.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/VoiceAI/SuiteScript/CloudAlp.VoiceAI.VoiceAI.js",
+        "files": [
+            "Modules/VoiceAI/SuiteScript/CloudAlp.VoiceAI.VoiceAI.js",
+            "Modules/VoiceAI/SuiteScript/VoiceAI.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\VoiceAI",
+    "suitescript2": {
+        "files": [
+            "Modules/VoiceAI/SuiteScript2/VoiceAI.Service.ss"
+        ]
+    }
+}
